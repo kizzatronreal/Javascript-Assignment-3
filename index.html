@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA Astronomy Picture of the Day</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!--  HEADER  -->
+  <header class="site-header">
+    <h1>🚀 NASA Astronomy Picture of the Day</h1>
+    <p class="subtitle">A beginner-friendly demo of the NASA APOD API</p>
+    <p id="student-info"></p>
+  </header>
+
+  <main>
+
+    <!--  FEATURED APOD (today's picture)  -->
+    <section id="featured" class="card featured-card">
+      <div id="featured-loading" class="loading">Loading today's picture from NASA...</div>
+      <div id="featured-content" class="featured-content hidden">
+        <div id="featured-media" class="media-wrapper"></div>
+        <div class="featured-text">
+          <h2 id="featured-title"></h2>
+          <p class="meta">
+            <span id="featured-date"></span> ·
+            <span id="featured-copyright"></span>
+          </p>
+          <p id="featured-explanation"></p>
+          <a id="featured-hd-link" href="#" target="_blank" rel="noopener" class="btn-link hidden">
+            View Full Resolution ↗
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="controls">
+      <label for="date-picker">Pick a date to explore:</label>
+      <input type="date" id="date-picker" />
+      <button id="load-date-btn">Show Picture</button>
+      <button id="random-week-btn">🎲 Show Random Week Gallery</button>
+    </section>
+
+    <!--  GALLERY  -->
+    <section id="gallery-section">
+      <h2>Gallery</h2>
+      <div id="gallery-loading" class="loading hidden">Fetching gallery images...</div>
+      <div id="gallery" class="gallery-grid"></div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER  -->
+  <footer class="site-footer">
+    <p>
+      Powered by the
+      <a href="https://api.nasa.gov/" target="_blank" rel="noopener">NASA Open APIs (APOD)</a>.
+    </p>
+    <p>
+      Tutorial / documentation followed:
+      <a href="https://github.com/nasa/apod-api" target="_blank" rel="noopener">
+        github.com/nasa/apod-api
+      </a>
+      and the "Getting Started" guide at
+      <a href="https://api.nasa.gov/" target="_blank" rel="noopener">api.nasa.gov</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
