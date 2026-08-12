@@ -1,4 +1,4 @@
-const API_KEY = "DEMO_KEY"; // temp
+const API_KEY = "qxxqDX3ytA2RuymPkmP58mpIq57kOCxWJu1n6pID"; 
 const APOD_BASE_URL = "https://api.nasa.gov/planetary/apod";
 
 // Student Info
